@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp" >
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/gh_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription=""
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/shape_gray_square_bg" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gh_font_lightgray"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:drawableLeft="@drawable/ic_time"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_parkInfo"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:drawableLeft="@drawable/ic_park"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

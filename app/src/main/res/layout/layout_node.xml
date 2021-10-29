@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_one_node_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+        <TextView
+            android:id="@+id/tv_node"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="bottom"
+            android:textColor="@color/gh_font_lightgray"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_datatime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textColor="@color/gh_font_red"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="209dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+    <View
+        android:layout_width="210dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+    <View
+        android:layout_width="211dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+    <View
+        android:layout_width="212dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+    <View
+        android:layout_width="213dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+    <View
+        android:layout_width="214dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/list_item_divider"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingRight="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="bottom"
+            android:textColor="@color/gh_font_lightgray"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="最新数据时间："
+            android:textColor="@color/gh_font_gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_datatime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textColor="@color/gh_font_red"
+            android:textSize="14sp" />
+    </LinearLayout>-->
+
+</LinearLayout>

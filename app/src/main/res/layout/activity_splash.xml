@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#23B14D"
+    tools:context=".activity.SplashActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:src="@drawable/img_launcher_round"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:text="@string/app_name_full"
+        android:textSize="26sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/versionNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <ProgressBar
+        android:id="@+id/refresh_list_footer_progressbar"
+        android:layout_width="105dp"
+        android:layout_height="15dp"
+        android:indeterminateDrawable="@drawable/process_bar_refresh"
+        android:layout_gravity="center">
+    </ProgressBar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:text="天津市农业科学院信息研究所"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

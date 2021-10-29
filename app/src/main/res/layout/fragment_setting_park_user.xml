@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context=".fragment.SettingParkUserFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <include
+        android:id="@+id/btn_selfInfo"
+        layout="@layout/layout_button_one"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_park_info"
+        layout="@layout/layout_button_one"/>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <include
+        android:id="@+id/btn_gh_manage"
+        layout="@layout/layout_button_one"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <include
+        android:id="@+id/btn_alarm_info"
+        layout="@layout/layout_button_one"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <include
+        android:id="@+id/btn_clear_cache"
+        layout="@layout/layout_button_one"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <include
+        android:id="@+id/btn_quit"
+        layout="@layout/layout_button_one"/>
+
+</LinearLayout>

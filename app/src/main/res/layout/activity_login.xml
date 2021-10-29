@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </View>
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_launcher_round"
+            android:background="#ffffff" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </View>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint="请输入您的用户名" />
+
+    <EditText
+        android:id="@+id/login_edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint="请输入您的密码" />
+
+    <!--<RadioGroup
+        android:id="@+id/radioGroup_role"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButton_sysAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="系统管理员" />
+        <RadioButton
+            android:id="@+id/radioButton_parkAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="园区管理员" />
+        <RadioButton
+            android:id="@+id/radioButton_parkUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="园区工作人员" />
+    </RadioGroup>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/Login_Remember"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="自动登录"
+            android:checked="true"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/login_text_change_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="忘记密码  "
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="#545bcb"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="52dp" />
+
+</LinearLayout>

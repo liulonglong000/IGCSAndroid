@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".activity.AcStrategyInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="阈 值 组"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/sel_tg1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:clickable="true"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="或 "
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical|right"/>
+                <TextView
+                    android:id="@+id/sel_tg2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:clickable="true"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="或 "
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical|right"/>
+                <TextView
+                    android:id="@+id/sel_tg3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:clickable="true"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="操 作 组"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/sel_og"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:clickable="true"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="时 间 段"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:background="@drawable/limit_underline"
+                    android:clickable="true"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:text="到"/>
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:background="@drawable/limit_underline"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="添  加"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/mBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

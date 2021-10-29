@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name_full">设施一键式智能调控APP</string>
+    <string name="app_name">温室调控</string>
+    <string name="app_title">设施一键式智能调控</string>
+
+    <!--<string name="app_name_full">温室环境监测与补光控制APP</string>
+    <string name="app_name">温室补光</string>
+    <string name="app_title">温室环境监测与补光控制</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

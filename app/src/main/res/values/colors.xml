@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#05A704</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_green">#ff16e200</color>
+    <color name="gray">#bfbfbf</color>
+    <color name="blue">#4ac2ee</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="menu_bg">#ff818d90</color>
+
+    <color name="list_background">#ffd4dbdf</color>
+    <color name="border">#eeeeee</color>
+    <color name="list_item_img_border">#ffdddddd</color>
+    <color name="list_item_divider">#ff05a704</color>
+
+    <color name="gh_font_gray">#ff6B6B6B</color>
+    <color name="gh_font_red">#ffCC0000</color>
+    <color name="gh_font_lightgray">#ff515151</color>
+    <color name="gh_font_green">#ff14a83a</color>
+    <color name="gh_font_lightred">#ffe60122</color>
+    <color name="sensor_normal_border">#ffcfcfcf</color>
+    <color name="gh_font_dark_green">#ff017f00</color>
+
+    <color name="table_head_bg">#b3e4b3</color>
+
+    <color name="grey_bg">#ebebeb</color>
+    <color name="gray_font">#373737</color>
+
+    <color name="green1">#2cd645</color>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#369238</color><!--绿色-->
+    <color name="translucent_black">#88000000</color>
+</resources>

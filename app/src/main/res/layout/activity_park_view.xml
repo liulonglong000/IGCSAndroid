@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context=".activity.ParkViewActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="图片"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/siv_parkPic"
+            layout="@layout/layout_smartimageview_48" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="园区ID"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/tv_parkId"
+            layout="@layout/layout_textview_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="名称"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/tv_parkName"
+            layout="@layout/layout_textview_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="面积(亩)"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/tv_parkArea"
+            layout="@layout/layout_textview_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="地址"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/tv_parkAddr"
+            layout="@layout/layout_textview_right"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="说明"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/tv_parkRemark"
+            layout="@layout/layout_textview_right"/>
+    </LinearLayout>
+
+</LinearLayout>

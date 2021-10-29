@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".activity.UserAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="用  户  名"
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/gh_font_lightgray"
+            android:maxLength="8"
+            android:gravity="center_vertical"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="姓        名"
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/gh_font_lightgray"
+            android:maxLength="255"
+            android:gravity="center_vertical"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="密        码"
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/gh_font_lightgray"
+            android:maxLength="8"
+            android:gravity="center_vertical"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="确认密码"
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/et_pwd_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/gh_font_lightgray"
+            android:maxLength="8"
+            android:gravity="center_vertical"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="添    加"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认背景-->
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/list_item_divider" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!--点击背景-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/gh_font_dark_green" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</selector>

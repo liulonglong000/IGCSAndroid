@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xxs.igcsandroid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 摄像头添加： 访问闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.AcEncodeActivity"></activity>
+        <activity android:name=".activity.AcEncodeMgrActivity" />
+        <activity
+            android:name=".ezuikit.PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activity.AcAppStrategyMgrActivity" />
+        <activity android:name=".activity.AcTimeLimitActivity" />
+        <activity android:name=".activity.AcTimeLimitMgrActivity" />
+        <activity android:name=".activity.AcArmStrategyValueActivity" />
+        <activity android:name=".activity.AcArmStrategyTimeActivity" />
+        <activity android:name=".activity.AcArmStrategyMgrActivity" />
+        <activity
+            android:name=".activity.SensorWDetailActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.AcOperationAlarmActivity" />
+        <activity android:name=".activity.AlarmQueryActivity" />
+        <activity android:name=".activity.AlarmNewActivity" />
+
+        <service
+            android:name=".alarmInfo.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".alarmInfo.MyContentProvider"
+            android:authorities="com.xxs.igcsandroid.provider.myprovider" />
+
+        <activity android:name=".activity.MainBaseActivity" />
+        <activity android:name=".activity.GatewayShowActivity" />
+        <activity android:name=".activity.GreenhouseShowActivity" />
+        <activity android:name=".activity.NodeInfoActivity" />
+        <activity android:name=".activity.NodeManageActivity" />
+        <activity android:name=".activity.UserPwdMdyActivity" />
+        <activity android:name=".activity.AcStrategyInfoActivity" />
+        <activity android:name=".activity.AcStrategyMgrActivity" />
+        <activity android:name=".activity.AcOperationInfoActivity" />
+        <activity android:name=".activity.AcOperationGroupInfoActivity" />
+        <activity android:name=".activity.AcOperationGroupMgrActivity" />
+        <activity android:name=".activity.AcThresholdInfoActivity" />
+        <activity android:name=".activity.AcThresholdGroupInfoActivity" />
+        <activity android:name=".activity.AcThresholdGroupMgrActivity" />
+        <activity
+            android:name=".activity.VideoMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SensorDetailActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.MonitorNodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GreenhouseInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GreenhouseManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GatewayInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ParkViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserPhoneMdyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainParkUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GatewayManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserPicMdyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ParkInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainParkAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ParkAdminManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserNameMdyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelfInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainSysAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoryChartActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

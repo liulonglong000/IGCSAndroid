@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".activity.AcEncodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_encode_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="当前圈数："
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/et_cur_qs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/gh_font_lightgray"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="总  圈  数："
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/et_total_qs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/gh_font_lightgray"
+            android:background="@drawable/limit_underline"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="修  改"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

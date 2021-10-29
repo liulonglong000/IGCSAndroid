@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_operation_common_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/layout_operation_common_remark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray_font"
+                    android:text="执行操作"
+                    android:layout_marginBottom="80dp"
+                    android:textSize="@dimen/btn_text_size"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioGroup
+                            android:id="@+id/rg_rbm"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+                            <RadioButton
+                                android:id="@+id/rb_open_manual"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:checked="false"
+                                android:enabled="false"
+                                android:text="启用外设开关" />
+                            <RadioButton
+                                android:id="@+id/rb_open_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:checked="true"
+                                android:text="卷起" />
+                            <RadioButton
+                                android:id="@+id/rb_close_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:checked="false"
+                                android:text="铺开" />
+                            <RadioButton
+                                android:id="@+id/rb_open_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:checked="false"
+                                android:text="卷起" />
+                            <RadioButton
+                                android:id="@+id/rb_close_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:checked="false"
+                                android:text="铺开" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="运行"/>
+                            <EditText
+                                android:id="@+id/et_open_time"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:enabled="false"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="秒"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="运行"/>
+                            <EditText
+                                android:id="@+id/et_close_time"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:enabled="false"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="秒"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_operation_common_bottom"/>
+
+</LinearLayout>

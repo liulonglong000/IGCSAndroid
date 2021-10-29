@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context=".activity.SelfInfoActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="头像"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include
+            android:id="@+id/siv_accountPic"
+            layout="@layout/layout_smartimageview_48" />
+        <include layout="@layout/layout_imageview_more"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="姓名"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/btn_text_size"/>
+        <include layout="@layout/layout_imageview_more"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/layout_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="密码"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <include layout="@layout/layout_imageview_more"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="联系电话"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/btn_text_size"/>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/btn_text_size"/>
+        <include layout="@layout/layout_imageview_more"/>
+    </LinearLayout>
+
+</LinearLayout>

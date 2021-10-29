@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AcOperationGroupInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_base_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EAEAEA"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_node"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="基本信息"
+                android:textColor="#8C8C8C"
+                android:textSize="14sp" />
+            <include
+                android:id="@+id/iv_base_more"
+                layout="@layout/layout_imageview_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="名        称"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/et_tgName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:maxLength="20"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/limit_underline"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="备        注"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:maxLength="255"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/limit_underline"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="添  加"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_threshold_root"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_threshold_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#EAEAEA"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="操作信息"
+                    android:textColor="#8C8C8C"
+                    android:textSize="14sp" />
+                <include
+                    android:id="@+id/iv_threshold_more"
+                    layout="@layout/layout_imageview_more" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_threshold_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/btn_add_threshold"
+                        android:layout_width="100dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/button_bg"
+                        android:text="添加设备操作"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                    <Button
+                        android:id="@+id/btn_add_oper_alarm"
+                        android:layout_width="100dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/button_bg"
+                        android:text="添加告警操作"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAEAEA">
+                </View>
+                <include
+                    android:id="@+id/listView_threshold"
+                    layout="@layout/layout_listview" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

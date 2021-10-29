@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".activity.AcThresholdInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical">
+            <!--<LinearLayout
+                android:id="@+id/ll_tId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="阈值ID"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/et_tId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:maxLength="8"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/limit_underline"/>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="传感器"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/sel_sensor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:clickable="true"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="条    件"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/et_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:maxLength="8"
+                    android:inputType="number"
+                    android:gravity="center_vertical|center"
+                    android:background="@drawable/limit_underline"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="秒内"
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:background="@drawable/limit_underline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="  "
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+                <Spinner
+                    android:id="@+id/spinner_comp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:background="@drawable/limit_underline" />
+                <EditText
+                    android:id="@+id/et_comp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gh_font_lightgray"
+                    android:inputType="number"
+                    android:gravity="center_vertical|center"
+                    android:background="@drawable/limit_underline"/>
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@color/gh_font_gray"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="添  加"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/mBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

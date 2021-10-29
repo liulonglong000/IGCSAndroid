@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    tools:context=".fragment.NodeHistoryFragment">
+
+    <com.xxs.igcsandroid.control.LayoutTextAndSelect
+        android:id="@+id/tas_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xxs.igcsandroid.control.LayoutTextAndSelect
+        android:id="@+id/tas_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xxs.igcsandroid.control.LayoutTextAndSelect
+        android:id="@+id/tas_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xxs.igcsandroid.control.LayoutTextAndSelect
+        android:id="@+id/tas_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="展示方式："
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <RadioGroup
+            android:id="@+id/rg_show_method"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="表格展示"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/gh_font_lightgray" />
+            <RadioButton
+                android:id="@+id/rb_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="曲线展示"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/gh_font_lightgray"
+                android:checked="true"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btn_query"
+        layout="@layout/layout_button_long"/>
+
+    <View
+        android:id="@+id/mBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

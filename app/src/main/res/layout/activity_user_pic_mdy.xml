@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:scrollbars="vertical"
+    tools:context=".activity.UserPicMdyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/gh_font_gray"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/iv_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription=""
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/shape_gray_square_bg"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <Button
+                    android:id="@+id/btn_sel_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_bg"
+                    android:text="获取图库图片"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginRight="5dp"/>
+                <Button
+                    android:id="@+id/btn_shot_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_bg"
+                    android:text="拍照获取图片"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginRight="5dp"/>
+                <Button
+                    android:id="@+id/btn_del_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_bg"
+                    android:text="删&#160;&#160;&#160;&#160;除"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="保  存"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

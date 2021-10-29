@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context=".fragment.SettingParkAdminFragment">
+
+    <Button
+        android:id="@+id/btn_selfInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_self_info"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="个人信息"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <Button
+        android:id="@+id/btn_user_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_user_manage"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="用户管理"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <Button
+        android:id="@+id/btn_park_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_park_manage"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="园区信息"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_gateway_manage"
+        layout="@layout/layout_button_one"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_gh_manage"
+        layout="@layout/layout_button_one"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <include
+        android:id="@+id/btn_alarm_info"
+        layout="@layout/layout_button_one"/>
+
+    <!--<include layout="@layout/layout_divider_line"/>
+
+    <Button
+        android:id="@+id/btn_gh_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_park_manage"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="温室管理"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>-->
+
+    <Button
+        android:id="@+id/btn_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_clear_cache"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="清除缓存"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>
+
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawablePadding="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="退出登录"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/btn_text_size"/>
+
+</LinearLayout>

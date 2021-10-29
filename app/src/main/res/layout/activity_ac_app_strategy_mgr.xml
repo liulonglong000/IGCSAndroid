@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context=".activity.AcAppStrategyMgrActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <include
+        android:id="@+id/btn_threshold_group_manage"
+        layout="@layout/layout_button_one"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_operation_group_manage"
+        layout="@layout/layout_button_one"/>
+
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_strategy_manage"
+        layout="@layout/layout_button_one"/>
+
+</LinearLayout>
