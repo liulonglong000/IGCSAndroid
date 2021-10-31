@@ -3,11 +3,112 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_app_strategy_manage.xml" value="0.21197916666666666" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_bm_greenhouse_enable.xml" value="0.20885416666666667" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_bm_park_disable.xml" value="0.20885416666666667" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_app_strategy_mgr.xml" value="0.176" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_arm_strategy_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_arm_strategy_mgr.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_diagnosis_list.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_encode.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_encode_mgr.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_operation_alarm.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_operation_group_info.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_operation_group_mgr.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_operation_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_strategy_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_strategy_mgr.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_threshold_group_info.xml" value="0.4" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_threshold_group_mgr.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_threshold_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_time_limit.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_time_limit_mgr.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_alarm_new.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_alarm_query.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_manage.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_show.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_greenhouse_info.xml" value="0.25364583333333335" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_greenhouse_manage.xml" value="0.25364583333333335" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_greenhouse_show.xml" value="0.25364583333333335" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_history_chart.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_history_table.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_login.xml" value="0.1296875" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_main_base.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_main_park_admin.xml" value="0.6" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_main_park_user.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_main_sys_admin.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_monitor_node.xml" value="0.536" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_node_info.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_node_manage.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_park_admin_manage.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_park_info.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_park_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_play.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_self_info.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_sensor_detail.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_sensor_wdetail.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_video_monitor.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/dialog_date_time_picker.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_monitor_park_admin.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_monitor_park_admin_ex.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_monitor_park_user.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_monitor_sys_admin.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_node_autoctrl.xml" value="0.176" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_node_control.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_node_data.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/fragment_setting_park_admin.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_bottom_item.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_button_long.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_button_one.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_divider_line.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_drip.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_led.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_node.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_one.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_rbm.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_equipment_row.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_framelayout.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_history_table_body.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_imageview_more.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_listview.xml" value="0.19270833333333334" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_node.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_one_node_head.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_common_bottom.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_common_remark.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_common_title.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_drip_close.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_frm_close.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_led_close.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_led_open.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_rbm_close.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_rbm_manaual.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_operation_rbm_open.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_sensor_abnormal.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_sensor_empty.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_sensor_normal.xml" value="0.1296875" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_sensor_row.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_smartimageview_48.xml" value="0.16757246376811594" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_text_and_select.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_textview_history_table_item.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_textview_right.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_weather.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/layout_wsensor_row.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_alarm.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_arm_strategy.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_gateway.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_greenhouse.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_history_data.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_monitor_park_user.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_node.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_park.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_strategy.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_threshold.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_threshold_group.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_time_limit.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/list_item_user.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/spinner_item_common.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>

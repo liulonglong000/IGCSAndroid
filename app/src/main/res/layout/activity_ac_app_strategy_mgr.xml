@@ -28,4 +28,10 @@
         android:id="@+id/btn_strategy_manage"
         layout="@layout/layout_button_one"/>
 
+    <include layout="@layout/layout_divider_line"/>
+
+    <include
+        android:id="@+id/btn_virus_diagnosis"
+        layout="@layout/layout_button_one"/>
+
 </LinearLayout>

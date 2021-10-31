@@ -29,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         mAccount = findViewById(R.id.login_edit_account);
         mPwd = findViewById(R.id.login_edit_pwd);
 //        radioGroup_role = findViewById(R.id.radioGroup_role);

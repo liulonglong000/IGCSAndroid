@@ -1,5 +1,6 @@
 package com.xxs.igcsandroid.activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +9,15 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jaygoo.selector.MultiData;
 import com.jaygoo.selector.MultiSelectPopWindow;
@@ -28,6 +34,7 @@ import com.xxs.igcsandroid.util.StringUtil;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -40,11 +47,13 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
     private LinearLayout llGhId;
     private EditText etGhId;
     private EditText etName;
+    private EditText etCrop;
     private EditText etAdress;
     private EditText etRemark;
     private TextView tvUserOwn;
     private TextView nodesContain;
     private Button btnCommit;
+    private Spinner crop;
 
     private HandlePic hdlPic;
 
@@ -58,10 +67,23 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
     private String mSelUser;
     private boolean bHasGetUserList = false;
 
+     //农作物类别
+    private ArrayAdapter<String> adapterCrop = null;
+    private Context context;
+
+    //种植方向
+    private RadioGroup plantDirection;
+    private String direction = null;
+
+    //畦数
+    private EditText number;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_greenhouse_info);
+
+        context = GreenhouseInfoActivity.this;
 
         Intent curIntent = getIntent();
         Bundle bundle = curIntent.getExtras();
@@ -80,6 +102,11 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
         etName = findViewById(R.id.et_ghName);
         etAdress = findViewById(R.id.et_address);
         etRemark = findViewById(R.id.et_remark);
+        crop = findViewById(R.id.crop_type);
+        etCrop = findViewById(R.id.other_crop_type);
+        plantDirection = findViewById(R.id.plantDirection);
+        number = findViewById(R.id.number);
+
         nodesContain = findViewById(R.id.sel_nodes);
         nodesContain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -255,6 +282,16 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
                     mSelUser = dataObj.getString("userId");
                     tvUserOwn.setText(dataObj.getString("userName"));
 
+                    adapterCrop = new ArrayAdapter<String>(context,android.R.layout.simple_spinner_dropdown_item);
+                    JSONArray jArrayC = dataObj.getJSONArray("copyType");
+                    for (int i = 0; i < jArrayC.length(); i++) {
+                        String obj = jArrayC.getString(i);
+                        adapterCrop.add(obj);
+                    }
+                    adapterCrop.add("其他");
+
+                    crop.setAdapter(adapterCrop);
+
                     mpNodes.clear();
                     String strSel = "";
                     JSONArray jArrayN = dataObj.getJSONArray("nodes");
@@ -349,36 +386,63 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
     }
 
     private void doAddGhInfo() {
-        Map<String, String> mp = new LinkedHashMap<>();
-        mp.put("userId", mSelUser);
-        mp.put("ghId", etGhId.getText().toString().trim());
-        mp.put("ghName", etName.getText().toString().trim());
-        mp.put("ghAddress", etAdress.getText().toString().trim());
-        mp.put("ghRemark", etRemark.getText().toString().trim());
-        mp.put("gwNodes", getGhNodesList());
-        mp.put("picSrcFile", hdlPic.getPicSrcFile());
-        hdlPic.getFileToUpdate(etGhId.getText().toString().trim() + System.currentTimeMillis());
 
-        String url = "gateway/addGhInfoEx";
-        if (type == 2) {
-            url = "gateway/mdyGhInfoEx";
+        String countStr = number.getText().toString().trim();
+        int count = 0;
+        if(isOne(countStr) == false){
+            Toast.makeText(getApplicationContext(), "畦数应该为整数" , Toast.LENGTH_LONG).show();
+        }else{
+            count = Integer.valueOf(countStr);
+
+            Map<String, String> mp = new LinkedHashMap<>();
+            mp.put("userId", mSelUser);
+            mp.put("ghId", etGhId.getText().toString().trim());
+            mp.put("ghName", etName.getText().toString().trim());
+            mp.put("ghAddress", etAdress.getText().toString().trim());
+            mp.put("ghRemark", etRemark.getText().toString().trim());
+            mp.put("gwNodes", getGhNodesList());
+            mp.put("picSrcFile", hdlPic.getPicSrcFile());
+            hdlPic.getFileToUpdate(etGhId.getText().toString().trim() + System.currentTimeMillis());
+
+            String ghPlant = crop.getSelectedItem().toString();
+            if(ghPlant.equals("其他")){
+                ghPlant = etCrop.getText().toString().trim();
+            }
+
+            for (int i = 0; i < plantDirection.getChildCount(); i++) {
+                RadioButton rd = (RadioButton) plantDirection.getChildAt(i);
+                if (rd.isChecked()) {
+                    direction = rd.getText().toString().trim();
+                    break;
+                }
+            }
+
+            mp.put("ghPlant",ghPlant);
+            mp.put("plantDirection",direction);
+            mp.put("count",String.valueOf(count));
+
+            String url = "gateway/addGhInfoEx";
+            if (type == 2) {
+                url = "gateway/mdyGhInfoEx";
+            }
+
+            AsyncSocketUtil.postWithFile(this, url, mp, "picSel", hdlPic.getFileSel(), null, new AsyncSocketUtil.onSuccessJSONArray() {
+                @Override
+                public void OnJSONArrayResult(JSONArray response) {
+                    String str = "添加温室信息成功！";
+                    if (type == 2) {
+                        str = "修改温室信息成功！";
+                    }
+                    DlgUtil.showMsgInfo(GreenhouseInfoActivity.this, str, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finishWithResult();
+                        }
+                    });
+                }
+            }, null);
         }
 
-        AsyncSocketUtil.postWithFile(this, url, mp, "picSel", hdlPic.getFileSel(), null, new AsyncSocketUtil.onSuccessJSONArray() {
-            @Override
-            public void OnJSONArrayResult(JSONArray response) {
-                String str = "添加温室信息成功！";
-                if (type == 2) {
-                    str = "修改温室信息成功！";
-                }
-                DlgUtil.showMsgInfo(GreenhouseInfoActivity.this, str, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finishWithResult();
-                    }
-                });
-            }
-        }, null);
     }
 
     private void finishWithResult() {
@@ -434,5 +498,14 @@ public class GreenhouseInfoActivity extends AppCompatActivity {
         } else {
             doAddGhInfo();
         }
+    }
+
+    public static boolean isOne(String str) {
+        for (int i = str.length(); --i >= 0;) {
+            if (!Character.isDigit(str.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 }
