@@ -65,7 +65,7 @@ public class AcAppStrategyMgrActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AcAppStrategyMgrActivity.this, AcStrategyMgrActivity.class);
+                Intent intent = new Intent(AcAppStrategyMgrActivity.this, AcDiagnosisListActivity.class);
                 intent.putExtra("ghId", mGhId);
                 intent.putExtra("ghName", mGhName);
                 startActivity(intent);

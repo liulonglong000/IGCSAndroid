@@ -37,6 +37,7 @@
         <activity android:name=".activity.AcOperationAlarmActivity" />
         <activity android:name=".activity.AlarmQueryActivity" />
         <activity android:name=".activity.AlarmNewActivity" />
+        <activity android:name=".activity.AcDiagnosisListActivity"/>
 
         <service
             android:name=".alarmInfo.MyService"

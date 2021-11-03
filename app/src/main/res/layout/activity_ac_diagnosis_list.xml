@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/grey_bg">
+    tools:context=".activity.AcDiagnosisListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="待执行采集计划"
+            android:gravity="center"
+            android:id="@+id/willDealing"
+            android:clickable="true"
+           />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="历史采集计划"
+            android:gravity="center"
+            android:id="@+id/dealed"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    <include
+        android:id="@+id/listView_dl"
+        layout="@layout/layout_listview" />
 
 </LinearLayout>
