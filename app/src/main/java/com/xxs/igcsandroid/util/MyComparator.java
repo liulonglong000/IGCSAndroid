@@ -8,9 +8,9 @@ public class MyComparator implements Comparator<DignoseGroupInfo> {
 
     @Override
     public int compare(DignoseGroupInfo a, DignoseGroupInfo b) {
-        if((a.getDgStatus() == 1)&&(b.getDgStatus() != 1)){
+        if((a.getDgStatus().equals("1"))&&!(b.getDgStatus().equals("1"))){
             return -1;
-        }else if((b.getDgStatus() == 1)&&(a.getDgStatus() != 1)){
+        }else if((b.getDgStatus().equals("1"))&&!(a.getDgStatus().equals("1"))){
             return 1;
         }else{
             if(a.getDgInDate().getYear() > b.getDgInDate().getYear()){

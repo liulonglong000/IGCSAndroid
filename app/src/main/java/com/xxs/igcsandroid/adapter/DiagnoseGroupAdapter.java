@@ -10,10 +10,15 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.xxs.igcsandroid.R;
+import com.xxs.igcsandroid.activity.AcCollectActivity;
+import com.xxs.igcsandroid.activity.AcDiagnosisListActivity;
 import com.xxs.igcsandroid.activity.AcThresholdGroupInfoActivity;
 import com.xxs.igcsandroid.activity.AcThresholdGroupMgrActivity;
+import com.xxs.igcsandroid.activity.GreenhouseInfoActivity;
+import com.xxs.igcsandroid.application.MyApplication;
 import com.xxs.igcsandroid.entity.DignoseGroupInfo;
 import com.xxs.igcsandroid.entity.ThresholdGroupInfo;
+import com.xxs.igcsandroid.golbal.Constants;
 import com.xxs.igcsandroid.socket.AsyncSocketUtil;
 import com.xxs.igcsandroid.util.DlgUtil;
 
@@ -82,20 +87,20 @@ public class DiagnoseGroupAdapter extends MyBaseAdapter {
 
         final DignoseGroupInfo entity = mList.get(position);
 
-        int status = entity.getDgStatus();
+        String status = entity.getDgStatus();
         System.out.println("status"+status);
         String statusStr = "";
         switch (status) {
-            case 0:
+            case "0":
                 statusStr = "未采集";
                 break;
-            case 1:
+            case "1":
                 statusStr = "采集中";
                 break;
-            case 2:
+            case "2":
                 statusStr = "采集完成";
                 break;
-            case 3:
+            case "3":
                 statusStr = "已过期";
                 break;
         }
@@ -105,6 +110,16 @@ public class DiagnoseGroupAdapter extends MyBaseAdapter {
         holder.gvReason.setText("采集原因：" + entity.getDgReason());
         holder.gvNumber.setText("计划收集株数：" + entity.getDgPlanNum());
         holder.gvStatus.setText("采集状态：" + statusStr);
+
+        holder.start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mActivity, AcCollectActivity.class);
+                intent.putExtra("ghId", mGhId);
+                intent.putExtra("mGhName", mGhName);
+                mActivity.startActivityForResult(intent, Constants.ACTIVITY_RESULT_GH_RELOAD);
+            }
+        });
 
         return convertView;
 

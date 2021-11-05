@@ -13,7 +13,7 @@ public class DignoseGroupInfo {
     private String dgHouseId;
     private Time dgInDate;
     private Time dgPreFinDate;
-    private int dgStatus;
+    private String dgStatus;
     private String dgReason;
     private int dgPlanNum;
     private int dgRealNum;
@@ -23,7 +23,7 @@ public class DignoseGroupInfo {
         this.dgHouseId = obj.getString("dgHouseId");
         this.dgInDate = strToTime(obj.getString("dgInDate"));
         this.dgPreFinDate = strToTime(obj.getString("dgPreFinDate"));
-        this.dgStatus = obj.getInt("dgStatus");
+        this.dgStatus = obj.getString("dgStatus");
         this.dgReason = obj.getString("dgReason");
         this.dgPlanNum = obj.getInt("dgPlanNum");
         this.dgRealNum = obj.getInt("dgRealNum");
@@ -46,7 +46,7 @@ public class DignoseGroupInfo {
         return dgPreFinDate;
     }
 
-    public int getDgStatus() {
+    public String getDgStatus() {
         return dgStatus;
     }
 

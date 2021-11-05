@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/button_bg.xml" value="0.2140625" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_app_strategy_manage.xml" value="0.21197916666666666" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_autoctrl_operation_group_manage.xml" value="0.26979166666666665" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_autoctrl_strategy_manage.xml" value="0.171875" />
@@ -10,6 +11,7 @@
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_bm_greenhouse_enable.xml" value="0.20885416666666667" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/ic_bm_park_disable.xml" value="0.20885416666666667" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/shape_gray_square_bg.xml" value="0.26979166666666665" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/drawable/text_underline.xml" value="0.2140625" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_app_strategy_mgr.xml" value="0.176" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_arm_strategy_info.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_arm_strategy_mgr.xml" value="0.19583333333333333" />
@@ -29,6 +31,7 @@
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_ac_time_limit_mgr.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_alarm_new.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_alarm_query.xml" value="0.19583333333333333" />
+        <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_collect_list.xml" value="0.536" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_info.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_manage.xml" value="0.19583333333333333" />
         <entry key="..\:/software/Android/project/IGCSAndroid/app/src/main/res/layout/activity_gateway_show.xml" value="0.19583333333333333" />
